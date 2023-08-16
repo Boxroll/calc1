@@ -17,7 +17,7 @@ public class Main {
         String[] tokens = input.split(" ");
 
         if (tokens.length != 3) {
-            throw new Exception("Invalid input format");
+            throw new Exception("Недопустимый формат");
         }
 
         int a = Integer.parseInt(tokens[0]);
@@ -35,7 +35,7 @@ public class Main {
                 return a * b;
             case '/':
                 if (b == 0) {
-                    throw new Exception("Division by zero");
+                    throw new Exception("Деление на 0");
                 }
                 return a / b;
             default:
